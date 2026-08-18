@@ -33,9 +33,9 @@ Document every "I don't know," hesitation, or missing capability.
 | | People / Process / Tech | Critical / High / Med | | |
 
 **Severity guide:**
-- **Critical** — Would have caused significant additional damage in a real incident
-- **High** — Would have caused meaningful delay or confusion
-- **Medium** — Would have caused minor inefficiency
+- **Critical** - Would have caused significant additional damage in a real incident
+- **High** - Would have caused meaningful delay or confusion
+- **Medium** - Would have caused minor inefficiency
 
 ---
 
@@ -72,7 +72,7 @@ These must have owners and deadlines before leaving the exercise.
 
 ## What Went Well
 
-(Note anything that worked better than expected — this is as important as the gaps)
+(Note anything that worked better than expected - this is as important as the gaps)
 
 ---
 
