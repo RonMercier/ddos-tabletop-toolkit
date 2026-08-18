@@ -39,7 +39,7 @@
 
 ## What Didn't Work
 
-[Be specific and honest. This section is for internal use — it's how you actually improve.]
+[Be specific and honest. This section is for internal use - it's how you actually improve.]
 
 ---
 
