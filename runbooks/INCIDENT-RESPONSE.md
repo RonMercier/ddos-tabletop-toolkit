@@ -7,11 +7,11 @@
 
 ---
 
-## Quick Reference — First 5 Minutes
+## Quick Reference - First 5 Minutes
 
 ```
 1. Confirm it's an attack (not a traffic spike or bad deployment)
-2. Declare the incident — assign an Incident Commander
+2. Declare the incident - assign an Incident Commander
 3. Enable CDN/scrubbing protection
 4. Open incident communication channel
 5. Start the clock and document everything
@@ -19,7 +19,7 @@
 
 ---
 
-## Phase 1 — Detection and Confirmation (T+0 to T+5 min)
+## Phase 1 - Detection and Confirmation (T+0 to T+5 min)
 
 ### Confirm it's a DDoS (not a deployment or spike)
 
@@ -41,13 +41,13 @@
 
 ---
 
-## Phase 2 — Immediate Mitigation (T+5 to T+15 min)
+## Phase 2 - Immediate Mitigation (T+5 to T+15 min)
 
-### Layer 1 — CDN / Scrubbing
+### Layer 1 - CDN / Scrubbing
 
 **Provider:** [Cloudflare / AWS Shield / Other]
 **Dashboard URL:** [URL]
-**Login:** [Where credentials are stored — NOT in this document]
+**Login:** [Where credentials are stored - NOT in this document]
 
 Steps:
 - [ ] Log into CDN dashboard
@@ -56,7 +56,7 @@ Steps:
 - [ ] Verify origin IP is NOT reachable directly (test: `curl -v [origin IP]`)
 - [ ] Note: CDN IP ranges to allow in firewall: [LIST OR LINK]
 
-### Layer 2 — Cloud provider DDoS protection
+### Layer 2 - Cloud provider DDoS protection
 
 **Provider:** [AWS / Azure / GCP / Other]
 **Console URL:** [URL]
@@ -68,14 +68,14 @@ Steps:
 - [ ] Set or verify billing alert threshold: $[AMOUNT]
 - [ ] Verify auto-scaling limits: max [NUMBER] instances
 
-### Layer 3 — WAF / Rate limiting
+### Layer 3 - WAF / Rate limiting
 
 - [ ] Review WAF logs for attack pattern
 - [ ] Apply endpoint-specific rate limiting if L7 attack
 - [ ] Block ASNs or countries if concentrated (note legitimate traffic risk)
 - [ ] Rule syntax reference: [LINK TO WAF DOCS]
 
-### Layer 4 — Origin server (last resort)
+### Layer 4 - Origin server (last resort)
 
 - [ ] Rate limiting at Nginx: `limit_req_zone` / `limit_conn_zone`
 - [ ] Block known bad IPs: `deny [IP];`
@@ -84,32 +84,32 @@ Steps:
 
 ---
 
-## Phase 3 — Communication (Parallel to mitigation)
+## Phase 3 - Communication (Parallel to mitigation)
 
-### Internal — first 10 minutes
+### Internal - first 10 minutes
 
 | Who | What | How |
 |---|---|---|
 | Immediate team | Incident declared, channel open | [Slack/Teams/etc.] |
 | Engineering lead | Status + mitigation in progress | [Direct message] |
-| Executive on-call | Site is down / degraded | [Phone call — not text] |
+| Executive on-call | Site is down / degraded | [Phone call - not text] |
 
 ### Customer-facing communication
 
-**Template 1 — Initial (within 15 min):**
+**Template 1 - Initial (within 15 min):**
 ```
 We are currently experiencing a service disruption affecting [PRODUCT/SITE].
 Our team is actively working to resolve this. We will provide an update
 in [30/60] minutes. We apologize for the inconvenience.
 ```
 
-**Template 2 — Update (every 30 min):**
+**Template 2 - Update (every 30 min):**
 ```
 Update on the service disruption: [CURRENT STATUS]. Our team continues to
 work on resolution. Estimated restoration: [TIME or "We will update in 30 min"].
 ```
 
-**Template 3 — Resolution:**
+**Template 3 - Resolution:**
 ```
 The service disruption affecting [PRODUCT/SITE] has been resolved.
 Service is fully restored as of [TIME]. We are conducting a post-incident
@@ -118,7 +118,7 @@ review and will share findings. Thank you for your patience.
 
 ---
 
-## Phase 4 — Monitoring and Escalation
+## Phase 4 - Monitoring and Escalation
 
 ### Escalation thresholds
 
@@ -142,7 +142,7 @@ review and will share findings. Thank you for your patience.
 
 ---
 
-## Phase 5 — Resolution and Post-Incident
+## Phase 5 - Resolution and Post-Incident
 
 ### Declaring resolution
 
