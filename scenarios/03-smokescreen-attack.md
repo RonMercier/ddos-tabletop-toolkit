@@ -1,4 +1,4 @@
-# Scenario 03 — Smokescreen Attack
+# Scenario 03 - Smokescreen Attack
 
 **Difficulty:** Advanced
 **Estimated duration:** 45 minutes
@@ -8,26 +8,26 @@
 
 ## Background (Read aloud to the group)
 
-*This scenario is based on a documented attack pattern: a DDoS used not as the primary objective, but as noise to distract the security team while the real attack — credential theft or data exfiltration — happens quietly in the logs.*
+*This scenario is based on a documented attack pattern: a DDoS used not as the primary objective, but as noise to distract the security team while the real attack - credential theft or data exfiltration - happens quietly in the logs.*
 
 *This is the scenario that catches experienced teams off guard, because the instinct is to tunnel-vision on the loud problem. The lesson: when the alarm bells ring, someone always has to watch the rest of the house.*
 
 ---
 
-## INJECT 1 — The Distraction Begins (T+0 minutes)
+## INJECT 1 - The Distraction Begins (T+0 minutes)
 
-> 3:40 PM on a Friday. Large-scale UDP flood begins. 22 Gbps inbound. Your website goes down within 3 minutes. The entire security and engineering team is now focused on the DDoS — mitigation, escalation, customer communications, executive briefing. All hands on deck.
+> 3:40 PM on a Friday. Large-scale UDP flood begins. 22 Gbps inbound. Your website goes down within 3 minutes. The entire security and engineering team is now focused on the DDoS - mitigation, escalation, customer communications, executive briefing. All hands on deck.
 
 **Facilitator asks:**
-1. With everyone focused on the DDoS, who — if anyone — is still watching the rest of your environment?
+1. With everyone focused on the DDoS, who - if anyone - is still watching the rest of your environment?
 2. Do you have automated alerting that doesn't require a human to be actively watching?
 3. Is there a designated role in your IR process for someone to specifically NOT work the primary incident?
 
 ---
 
-## INJECT 2 — The Real Attack (T+15 minutes)
+## INJECT 2 - The Real Attack (T+15 minutes)
 
-> DDoS mitigation is underway and partially working. While reviewing CDN logs, one engineer notices something odd: a series of authenticated API requests to your `/api/export` endpoint — a data export function normally used by admins — started 8 minutes ago. The volume is unusual: 4,200 export requests from a single authenticated session in 6 minutes.
+> DDoS mitigation is underway and partially working. While reviewing CDN logs, one engineer notices something odd: a series of authenticated API requests to your `/api/export` endpoint - a data export function normally used by admins - started 8 minutes ago. The volume is unusual: 4,200 export requests from a single authenticated session in 6 minutes.
 
 **Facilitator asks:**
 1. In the middle of an active DDoS response, how do you decide to prioritize this new signal?
@@ -42,12 +42,12 @@
 
 ---
 
-## INJECT 3 — Containment Decision (T+25 minutes)
+## INJECT 3 - Containment Decision (T+25 minutes)
 
-> You confirm: the authenticated session belongs to a service account that should only run batch jobs overnight. It ran no jobs yesterday. The session was authenticated from an IP in Eastern Europe. The export requests have pulled 180,000 customer records — names, emails, and hashed passwords — in the last 14 minutes. The DDoS is still running at moderate intensity.
+> You confirm: the authenticated session belongs to a service account that should only run batch jobs overnight. It ran no jobs yesterday. The session was authenticated from an IP in Eastern Europe. The export requests have pulled 180,000 customer records - names, emails, and hashed passwords - in the last 14 minutes. The DDoS is still running at moderate intensity.
 
 **Facilitator asks:**
-1. Do you kill the session immediately — and does that tip off the attacker?
+1. Do you kill the session immediately - and does that tip off the attacker?
 2. Who decides: legal, security, engineering, or executive leadership?
 3. What does your breach notification obligation timeline look like from this moment?
 4. Do you have the ability to determine what was exported, or just that exports happened?
@@ -60,7 +60,7 @@
 
 ---
 
-## INJECT 4 — Containment Aftermath (T+35 minutes)
+## INJECT 4 - Containment Aftermath (T+35 minutes)
 
 > You've killed the compromised session, the DDoS has subsided (possibly because the data was extracted and the attacker achieved their goal), and you're now managing two simultaneous post-incident tracks: DDoS aftermath and potential data breach.
 
@@ -75,10 +75,10 @@
 ## Common Gaps Found in This Scenario
 
 - No one was designated to watch non-DDoS activity during the incident
-- The legal/breach notification process had never been discussed — nobody knew the clock started ticking
+- The legal/breach notification process had never been discussed - nobody knew the clock started ticking
 - Log retention was insufficient to reconstruct exactly what was exported
 - The service account had far more permissions than it needed (violating least privilege)
-- No legal contact was available — the process said "contact legal" but nobody had a number
+- No legal contact was available - the process said "contact legal" but nobody had a number
 
 ---
 
