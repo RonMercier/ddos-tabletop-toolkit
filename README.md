@@ -2,7 +2,7 @@
 
 **A practitioner's toolkit for running DDoS incident response tabletop exercises.**
 
-Built from real operational experience doing DDoS mitigation and incident response at Akamai Technologies — one of the companies whose entire job is absorbing attacks so other companies' infrastructure stays online. This isn't theoretical. These scenarios, decision points, and runbooks reflect what actually happens when a real DDoS hits a real system.
+Built from real operational experience doing DDoS mitigation and incident response at Akamai Technologies - one of the companies whose entire job is absorbing attacks so other companies' infrastructure stays online. This isn't theoretical. These scenarios, decision points, and runbooks reflect what actually happens when a real DDoS hits a real system.
 
 > 📖 **Read the practitioner's guide behind this toolkit:**
 > [How to Protect Your Cloud Server From DDoS Attacks](https://securebydefault.io)
@@ -23,7 +23,7 @@ It's whether they've practiced.
 
 The teams that survive have already answered the hard questions on a calm Tuesday: Who declares the incident? What do we reach for first? Who has credentials to the CDN dashboard? How do we communicate with customers while it's happening? What does "this is a smokescreen" look like, and what do we do about it?
 
-The teams that don't survive find out the answers during the actual attack — which is exactly the wrong time to discover your runbook has gaps, nobody knows the on-call rotation, and the person with CDN admin access is on vacation.
+The teams that don't survive find out the answers during the actual attack - which is exactly the wrong time to discover your runbook has gaps, nobody knows the on-call rotation, and the person with CDN admin access is on vacation.
 
 This toolkit exists so your first DDoS isn't also your first practice.
 
@@ -64,10 +64,10 @@ You don't need a full day or a dedicated facilitator. A 30-minute tabletop exerc
 ### 1. Pick a scenario (5 min)
 
 Choose based on your biggest risk:
-- New to this? Start with **[Scenario 01 — Volumetric Flood](scenarios/01-volumetric-flood.md)**
-- Have CDN in place? Go harder with **[Scenario 02 — Layer 7](scenarios/02-layer7-application.md)**
-- Most concerned about data theft? Run **[Scenario 03 — Smokescreen](scenarios/03-smokescreen-attack.md)**
-- Cloud/AWS/GCP? **[Scenario 04 — Economic DoS](scenarios/04-economic-dos.md)** is the one that keeps cloud engineers up at night
+- New to this? Start with **[Scenario 01 - Volumetric Flood](scenarios/01-volumetric-flood.md)**
+- Have CDN in place? Go harder with **[Scenario 02 - Layer 7](scenarios/02-layer7-application.md)**
+- Most concerned about data theft? Run **[Scenario 03 - Smokescreen](scenarios/03-smokescreen-attack.md)**
+- Cloud/AWS/GCP? **[Scenario 04 - Economic DoS](scenarios/04-economic-dos.md)** is the one that keeps cloud engineers up at night
 
 ### 2. Gather the right people (5 min)
 
@@ -79,8 +79,8 @@ A tabletop needs at minimum:
 ### 3. Set ground rules (2 min)
 
 Tell the group:
-- This is a safe space — there are no wrong answers, only gaps to find
-- "I don't know" is a valid and valuable answer — write it down
+- This is a safe space - there are no wrong answers, only gaps to find
+- "I don't know" is a valid and valuable answer - write it down
 - The goal is to find problems, not prove everything works
 
 ### 4. Run the scenario (15 min)
@@ -114,21 +114,21 @@ Fill out **[Exercise Scorecard](templates/EXERCISE-SCORECARD.md)** and assign ow
 
 ## What You'll Find in Your Gaps
 
-After running hundreds of incident scenarios, these are the gaps that come up most reliably. Don't be embarrassed — everyone finds them:
+After running hundreds of incident scenarios, these are the gaps that come up most reliably. Don't be embarrassed - everyone finds them:
 
 **People gaps (most common)**
 - Nobody knows who declares an incident officially
 - The person with CDN/scrubbing dashboard access is unavailable
-- Customer communication ownership is unclear — engineering assumes marketing handles it, marketing assumes engineering does
+- Customer communication ownership is unclear - engineering assumes marketing handles it, marketing assumes engineering does
 
 **Process gaps**
-- No documented escalation path — decisions happen ad hoc
+- No documented escalation path - decisions happen ad hoc
 - "Under attack mode" on the CDN has never been tested and nobody knows where the toggle is
 - The incident response plan exists but is stored somewhere inaccessible when the site is down
 
 **Technical gaps**
 - Origin IP is discoverable by attackers (bypasses CDN protection entirely)
-- No billing alerts set — an economic DoS could run for hours before discovery
+- No billing alerts set - an economic DoS could run for hours before discovery
 - Rate limiting exists in theory but the specific thresholds haven't been reviewed in years
 
 ---
@@ -142,16 +142,16 @@ Every scenario in this toolkit is written generically so it can apply to your ac
 - Replace "the on-call engineer" with your actual person's name and contact
 - Add any environment-specific constraints (compliance requirements, SLA commitments, etc.)
 
-Customization takes the exercise from "abstract hypothetical" to "uncomfortably realistic" — which is exactly the goal.
+Customization takes the exercise from "abstract hypothetical" to "uncomfortably realistic" - which is exactly the goal.
 
 ---
 
 ## Related Resources
 
-- [securebydefault-server-hardening](https://github.com/RonMercier/securebydefault-server-hardening) — Nginx, UFW, Fail2Ban, SSH configs for cloud VPS
-- [cloud-security-checklist](https://github.com/RonMercier/cloud-security-checklist) — 28-item security baseline checklist
-- [SecureByDefault.io](https://securebydefault.io) — Real attack breakdowns and practitioner guides
-- [The SecureByDefault Brief](https://newsletter.securebydefault.io) — Weekly security newsletter
+- [securebydefault-server-hardening](https://github.com/RonMercier/securebydefault-server-hardening) - Nginx, UFW, Fail2Ban, SSH configs for cloud VPS
+- [cloud-security-checklist](https://github.com/RonMercier/cloud-security-checklist) - 28-item security baseline checklist
+- [SecureByDefault.io](https://securebydefault.io) - Real attack breakdowns and practitioner guides
+- [The SecureByDefault Brief](https://newsletter.securebydefault.io) - Weekly security newsletter
 
 ---
 
@@ -163,20 +163,20 @@ Open issues or PRs for:
 - Additional communication templates
 - Translations
 
-Every contribution should be grounded in realistic, practitioner-tested scenarios — not theoretical attacks from a textbook.
+Every contribution should be grounded in realistic, practitioner-tested scenarios - not theoretical attacks from a textbook.
 
 ---
 
 ## License
 
-MIT License — use freely for internal exercises, training, conferences, or courses.
+MIT License - use freely for internal exercises, training, conferences, or courses.
 Attribution to this repo is appreciated but not required.
 
 ---
 
 ## About
 
-Built by **Ron Mercier** — Cloud & Cybersecurity Engineer.
+Built by **Ron Mercier** - Cloud & Cybersecurity Engineer.
 Previously: DDoS mitigation and incident response at **Akamai Technologies**.
 MSc Cybersecurity · CySA+ · PenTest+ · ISC2 CC · AWS CCP.
 
