@@ -1,6 +1,6 @@
 # Exercise Facilitator Guide
 
-**How to run a DDoS tabletop exercise — even if you've never facilitated one before.**
+**How to run a DDoS tabletop exercise - even if you've never facilitated one before.**
 
 ---
 
@@ -44,10 +44,10 @@ This document becomes the source for the post-exercise report.
 ### Your role as facilitator
 
 You are NOT a participant. You are:
-- **The narrator** — you read the scenario and inject descriptions aloud
-- **The clock** — you track time and keep things moving
-- **The note-taker** — you (or a designated co-facilitator) document gaps
-- **The challenger** — you probe assumptions without being adversarial
+- **The narrator** - you read the scenario and inject descriptions aloud
+- **The clock** - you track time and keep things moving
+- **The note-taker** - you (or a designated co-facilitator) document gaps
+- **The challenger** - you probe assumptions without being adversarial
 
 You are NOT:
 - The person who gives the right answers
@@ -58,7 +58,7 @@ You are NOT:
 
 "I don't know" is the most valuable answer in a tabletop. When you hear it, say:
 
-> "Great — write that down. Who would know that? What would we need to find out?"
+> "Great - write that down. Who would know that? What would we need to find out?"
 
 Do not fill the gap yourself. The team finding the gap is the point.
 
@@ -72,7 +72,7 @@ If the team goes quiet after an inject, wait 10 seconds. Silence usually means t
 
 ### Pacing
 
-Each inject should take 5-10 minutes of discussion. If a team is going deep on a single inject, let them go — that's where the real gaps are. If they're moving too fast, probe harder.
+Each inject should take 5-10 minutes of discussion. If a team is going deep on a single inject, let them go - that's where the real gaps are. If they're moving too fast, probe harder.
 
 Never skip the debrief. The 8-minute debrief at the end is where the team consolidates learning. It's the most important part.
 
@@ -80,7 +80,7 @@ Never skip the debrief. The 8-minute debrief at the end is where the team consol
 
 ## Inject Delivery Tips
 
-Read the inject slowly and clearly. Pause for effect. If the scenario is going well, the team should feel genuinely uncertain about the right answer — that's correct.
+Read the inject slowly and clearly. Pause for effect. If the scenario is going well, the team should feel genuinely uncertain about the right answer - that's correct.
 
 After each inject, use this structure:
 1. Read the inject
@@ -95,15 +95,15 @@ After each inject, use this structure:
 
 ### 8-minute debrief structure
 
-1. **What went well?** (2 min) — Start positive. Something always went well.
-2. **Where did we get stuck?** (3 min) — The real gaps. Be specific.
-3. **Top 3 action items with owners** (3 min) — Name a person and a deadline before leaving the room.
+1. **What went well?** (2 min) - Start positive. Something always went well.
+2. **Where did we get stuck?** (3 min) - The real gaps. Be specific.
+3. **Top 3 action items with owners** (3 min) - Name a person and a deadline before leaving the room.
 
 ### Assign owners before the room empties
 
 The most common reason tabletop action items don't get done: no owner and no deadline were set before the meeting ended. Force the issue:
 
-> "Before we leave — [GAP] needs an owner. Who takes it? And when is it done by?"
+> "Before we leave - [GAP] needs an owner. Who takes it? And when is it done by?"
 
 Do this for every significant gap. If something doesn't get an owner, it doesn't get done.
 
@@ -112,7 +112,7 @@ Do this for every significant gap. If something doesn't get an owner, it doesn't
 ## Common Facilitator Mistakes
 
 **Giving hints when the team struggles**
-Resist. The struggle is where learning happens. If they can't answer "who has CDN access," that's a real gap — not a facilitator failure.
+Resist. The struggle is where learning happens. If they can't answer "who has CDN access," that's a real gap - not a facilitator failure.
 
 **Skipping injects because time is short**
 Cut the number of injects, not the debrief. The debrief is non-negotiable.
